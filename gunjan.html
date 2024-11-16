@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunjan - Portfolio</title>
+    <style>
+        /* Reset and basic styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #252324;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(to bottom, #d083a6, #e6bed6);
+            color: #fff;
+            padding: 6em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: #333;
+            text-align: right;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Section styling */
+        section {
+            width: 90%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #444;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Projects styling */
+        .projects {
+            /* padding: 20px; */
+            display: block;
+        }
+
+        .project {
+            /* width: calc(45% - 20px); */
+            width: 100%; /* Set the width to 100% for mobile responsiveness */
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #e1dcdc;
+            border-radius: 5px;
+        }
+
+        a{
+            color: #171212;
+        }
+
+        a:hover{
+            color:#880e49;
+        }
+
+        .project-det ul {
+            padding-top: 5px;
+            line-height: 1.5;
+             /* margin-bottom: 15px;  */
+        }
+
+        .project-details li {
+            padding-top: 10px;
+            /* margin-bottom: px; Adjust the margin-bottom value as needed */
+        }
+
+        /* Skills and Certificates styling */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skill {
+            width: calc(45% - 20px);
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e1dcdc;
+            border-radius: 5px;
+            position: relative;
+        }
+        
+
+        .certificate-link {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: -10px; /* Adjust as needed */
+            margin-right: -10px; /* Adjust as needed */
+        }
+
+        .certificate-link img {
+            width: 50px; /* Adjust the width as needed */
+            height: auto;
+            border-radius: 5px; /* Optional: Add rounded corners */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow */
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #444;
+            color: #fff;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 4em 0;
+            }
+
+            nav {
+                padding: 0.5em 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .projects .project,
+            .skills .skill {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gunjan</h1>
+        
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#cert">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+            <p>
+                Hi there! I'm Gunjan, a dedicated and enthusiastic Computer Science Engineering student pursuing my B.Tech degree. 
+            </p>
+        
+            <p>
+                I have a profound interest in the field of cybersecurity, where I aim to combine my technical skills with a passion for creating secure digital environments.
+            </p>
+
+            <p>
+                I believe in the power of continuous learning and keeping up-to-date with the latest advancements in cybersecurity. Whether it's exploring penetration testing, cryptography, or ethical hacking, I am committed to expanding my knowledge to contribute to the ever-evolving field of cybersecurity.
+            </p>
+
+            <p>
+                 I am always open to new opportunities, collaborations, and challenges that allow me to grow both personally and professionally.
+            </p>
+        
+        
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>MiTM ATTACK (USING ARP AND DNS SPOOFING)</h3>
+                <p>
+                    In this project, I developed and executed a demonstration of a Man-in-the-Middle (MITM) attack using ARP (Address Resolution Protocol) and DNS (Domain Name System) spoofing techniques. The primary objective was to showcase the vulnerabilities in network communication and raise awareness about the importance of securing data transmission.
+                </p>
+
+                <div class="project-details">
+                    <ul>
+                        <li>
+                            <strong>Techniques Used:</strong>
+                            <ul>
+                                <li>Utilized ARP spoofing to manipulate device communication.</li>
+                                <li>Employed DNS spoofing to redirect legitimate domain requests.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>DDoS ATTACK </h3>
+                <p>
+                    In this project, I simulated a Distributed Denial of Service (DDoS) attack on a virtual machine. The main goal was to pretend to attack a computer system in different ways, see how it affected the system, and explore how we can protect against these kinds of attacks.
+
+                </p>
+                <ul>
+                    <li>
+                        <strong>Techniques Used:</strong>
+                        <div class="project-det">
+                        <ul>
+                            Implemented the TCP SYN method, a tactic often exploited in DDoS attacks. This method involves overwhelming a system by systematically bombarding it with connection requests that are intentionally left incomplete.
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML/CSS</div>
+            <div class="skill">C++</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Linux</div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+    <section id="cert">
+        <h2>Certificates</h2>
+        <div class="skills">
+            
+            <div class="skill">
+                <a href="https://github.com/Gunjan55/Certificates/blob/main/eccouncil_cert.png">Ethical Hacking Essentials by EC-Council</a>
+            </div>
+
+            <div class="skill">
+                <a href="https://github.com/Gunjan55/Certificates/blob/main/neilit_cert.pdf">Ethical Hacking (6 week training)</a>
+            </div>
+
+    
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+             You can reach out to me via email at <strong>ggunjan711@gmail.com</strong> or connect with me on  <a href="//github.com/Gunjan55">github</a>.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 GUNJAN. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
